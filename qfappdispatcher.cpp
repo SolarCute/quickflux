@@ -25,7 +25,7 @@ QFAppDispatcher::QFAppDispatcher(QObject *parent) : QFDispatcher(parent)
 
 QFAppDispatcher *QFAppDispatcher::instance(QQmlEngine *engine)
 {
-    QFAppDispatcher *dispatcher = qobject_cast<QFAppDispatcher*>(singletonObject(engine,"QuickFlux",1,0,"AppDispatcher"));
+    QFAppDispatcher *dispatcher = qobject_cast<QFAppDispatcher*>(singletonObject(engine,"solar.util.quickflux",1,0,"AppDispatcher"));
 
     return dispatcher;
 }
